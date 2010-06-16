@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewItemDialog.Designer.cs">
+      <DependentUpon>NewItemDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="PickerCreatorHandler.cs" />
     <Compile Include="TestApp.cs">
       <SubType>Form</SubType>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="NewItemDialog.resx">
+      <DependentUpon>NewItemDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestApp.resx">
       <DependentUpon>TestApp.cs</DependentUpon>
     </EmbeddedResource>

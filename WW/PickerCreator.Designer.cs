@@ -34,6 +34,7 @@
             this.listBox = new System.Windows.Forms.ListBox();
             this.OKButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -61,6 +62,7 @@
             this.newButton.TabIndex = 2;
             this.newButton.Text = "New...";
             this.newButton.UseVisualStyleBackColor = true;
+            this.newButton.Click += new System.EventHandler(this.newButton_Click);
             // 
             // listBox
             // 
@@ -69,6 +71,7 @@
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(182, 264);
             this.listBox.TabIndex = 3;
+            this.listBox.SelectedValueChanged += new System.EventHandler(this.listBox_SelectedValueChanged);
             // 
             // OKButton
             // 
@@ -78,6 +81,7 @@
             this.OKButton.TabIndex = 4;
             this.OKButton.Text = "OK";
             this.OKButton.UseVisualStyleBackColor = true;
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // cancelButton
             // 
@@ -88,10 +92,22 @@
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
+            // removeButton
+            // 
+            this.removeButton.Enabled = false;
+            this.removeButton.Location = new System.Drawing.Point(234, 31);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(75, 23);
+            this.removeButton.TabIndex = 6;
+            this.removeButton.Text = "Remove";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            // 
             // PickerCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.removeButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.listBox);
@@ -113,5 +129,6 @@
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button removeButton;
     }
 }

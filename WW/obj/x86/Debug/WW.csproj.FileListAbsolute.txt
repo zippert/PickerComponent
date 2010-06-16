@@ -8,3 +8,4 @@ C:\Users\mattiaszippert\documents\visual studio 2010\Projects\WW\WW\bin\Debug\WW
 C:\Users\mattiaszippert\documents\visual studio 2010\Projects\WW\WW\obj\x86\Debug\WW.exe
 C:\Users\mattiaszippert\documents\visual studio 2010\Projects\WW\WW\obj\x86\Debug\WW.pdb
 C:\Users\mattiaszippert\Documents\Visual Studio 2010\Projects\WW\WW\obj\x86\Debug\WW.TestApp.resources
+C:\Users\mattiaszippert\Documents\Visual Studio 2010\Projects\WW\WW\obj\x86\Debug\WW.NewItemDialog.resources

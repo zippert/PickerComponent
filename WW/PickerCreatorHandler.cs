@@ -60,6 +60,11 @@ namespace WW
             return list;
         }
 
+        public Boolean contains(String key)
+        {
+            return data.ContainsKey(key);
+        }
+
 
 
     }
