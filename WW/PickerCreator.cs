@@ -16,12 +16,15 @@ namespace WW
         {
             InitializeComponent();
             handler = new PickerCreatorHandler();
+            handler.Add("test", "banan");
+            handler.Add("finsk", "pinne");
             initFields();
         }
 
         private void initFields()
         {
             listBox.Items.Clear();
+            
             listBox.Items.AddRange(handler.GetAllKeys());            
         }
 
@@ -30,11 +33,6 @@ namespace WW
             String[] results = handler.Get(searchTextField.Text);
             listBox.Items.Clear();
             listBox.Items.AddRange(results);
-        }
-
-        public void addDebugData(String key, String value)
-        {
-            handler.Add(key, value);
         }
     }
 }

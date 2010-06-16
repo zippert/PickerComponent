@@ -50,14 +50,6 @@
 
         }
 
-        private PickerCreatorHandler createTestHandler()
-        {
-            PickerCreatorHandler handler = new PickerCreatorHandler();
-            handler.Add("test", "test");
-            handler.Add("test2", "test2");
-            return handler;
-        }
-
         #endregion
         private PickerCreator picker;
     }
